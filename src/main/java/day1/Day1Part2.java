@@ -2,11 +2,12 @@ package day1;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+
+import utility.FileHelper;
 
 /**
  * @author Kilian
@@ -15,7 +16,7 @@ import java.util.Set;
 public class Day1Part2 {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
-		BufferedReader br = new BufferedReader(new InputStreamReader(Day1Part2.class.getClassLoader().getResourceAsStream("inputDay1Part2.txt")));
+		BufferedReader br = FileHelper.readFile("inputDay1Part2.txt");
 		
 		String row = null;
 		List<Integer> fileInMemory = new ArrayList<>();
